@@ -15,7 +15,6 @@ def random_startoffset(items):
 
 def random_mute(items):
 	selected_item = RPR_GetSelectedMediaItem(0, items)
-	#active_take = RPR_GetActiveTake(selected_item)
 	RPR_SetMediaItemInfo_Value (selected_item, 'B_MUTE', bool(getrandbits(1)))
 	RPR_UpdateArrange()	
 
@@ -24,9 +23,3 @@ def random_mute(items):
 for i in range(RPR_CountSelectedMediaItems(0)):
 	random_startoffset(i)
 	random_mute(i)
-# 	#log('New Offset Value: {}' .format(str(random_start_offset)))
-
-
-# item = RPR_GetSelectedMediaItem(0, 0)
-# RPR_SetMediaItemTakeInfo_Value(item, 'B_MUTE', False)
-# RPR_UpdateArrange()
