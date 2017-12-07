@@ -188,6 +188,7 @@ def main():
             start_track = new_track
             RPR_Undo_BeginBlock()
             new_track = create_new_track() # TODO: Validate the new track
+        set_track_fx_enabled(new_track, False)
 
         copy_and_paste_media_items(start_track, new_track)
         create_separation_between_media_items(new_track)
@@ -230,6 +231,15 @@ def create_new_track():
     new_track_index = RPR_GetNumTracks() - 1
     new_track = RPR_GetTrack(DEFAULT_PROJECT, new_track_index)
     return new_track
+
+def toggle_track_fx_enabled(track):
+    param = 'I_FXEN'
+    previous_value = RPR_GetMediaTrackInfo_Value(track, param)
+    results = RPR_SetMediaTrackInfo_Value(track, param, not previous_value)
+
+def set_track_fx_enabled(track, value):
+    param = 'I_FXEN'
+    results = RPR_SetMediaTrackInfo_Value(track, param, value)
 
 def copy_and_paste_media_items(source_track, dest_track):
     select_only_media_items_on_track(source_track)
