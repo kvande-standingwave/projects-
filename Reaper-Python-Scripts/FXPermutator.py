@@ -108,22 +108,7 @@ LIST_OF_FX = [
         'presets_exclusion': [],
         'preset_selection_mode': PRESET_SELECT_FROM_ALL, # 0 = All, 1 = From List
     },
-        # {
-        #     'name': 'H3000 Factory',
-        #  #   'short_name': '',
-        #     'separation_count': -1,
-        #     'presets': [],
-        #     'presets_exclusion': [],
-        #     'preset_selection_mode': PRESET_SELECT_FROM_ALL, # 0 = All, 1 = From List
-        # },
-    # {
-    #     'name': 'FilterFreak1',
-    #  #   'short_name': '',
-    #     'separation_count': -1,
-    #     'presets': [],
-    #     'presets_exclusion': [],
-    #     'preset_selection_mode': PRESET_SELECT_FROM_ALL, # 0 = All, 1 = From List
-    # },
+ 
     {
         'name': 'MondoMod Stereo',
      #   'short_name': '',
@@ -148,16 +133,39 @@ LIST_OF_FX = [
         'presets_exclusion': [],
         'preset_selection_mode': PRESET_SELECT_FROM_ALL, # 0 = All, 1 = From List
     },
-    # {
-    #     'name': 'ReaInsert',
-    #     'separation_count': -1,
-    #     'presets': []
-    # },
-    # {
-    #     'name': 'ReaVerb',
-    #     'separation_count': -1,
-    #     'presets': []
-    # }
+    {
+        'name': 'MetaFlanger Stereo',
+     #   'short_name': '',
+        'separation_count': -1,
+        'presets': [],
+        'presets_exclusion': [],
+        'preset_selection_mode': PRESET_SELECT_FROM_ALL, # 0 = All, 1 = From List
+    },
+    {
+        'name': 'ValhallaRoom',
+     #   'short_name': '',
+        'separation_count': -1,
+        'presets': [],
+        'presets_exclusion': [],
+        'preset_selection_mode': PRESET_SELECT_FROM_ALL, # 0 = All, 1 = From List
+    },
+    {
+        'name': 'ValhallaShimmer',
+     #   'short_name': '',
+        'separation_count': -1,
+        'presets': [],
+        'presets_exclusion': [],
+        'preset_selection_mode': PRESET_SELECT_FROM_ALL, # 0 = All, 1 = From List
+    },
+    {
+        'name': 'ValhallaSpaceModulator',
+     #   'short_name': '',
+        'separation_count': -1,
+        'presets': [],
+        'presets_exclusion': [],
+        'preset_selection_mode': PRESET_SELECT_FROM_ALL, # 0 = All, 1 = From List
+    },
+
 ]
 
 def main():
