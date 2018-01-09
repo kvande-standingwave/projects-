@@ -165,6 +165,164 @@ LIST_OF_FX = [
         'presets_exclusion': [],
         'preset_selection_mode': PRESET_SELECT_FROM_ALL, # 0 = All, 1 = From List
     },
+    {
+        'name': 'Uhbik-A_FXPERM',
+     #   'short_name': '',
+        'separation_count': -1,
+        'presets': [],
+        'presets_exclusion': [],
+        'preset_selection_mode': PRESET_SELECT_FROM_ALL, # 0 = All, 1 = From List
+    },
+    {
+        'name': 'Uhbik-D_FXPERM',
+     #   'short_name': '',
+        'separation_count': -1,
+        'presets': [],
+        'presets_exclusion': [],
+        'preset_selection_mode': PRESET_SELECT_FROM_ALL, # 0 = All, 1 = From List
+    },
+    {
+        'name': 'Uhbik-F_FXPERM',
+     #   'short_name': '',
+        'separation_count': -1,
+        'presets': [],
+        'presets_exclusion': [],
+        'preset_selection_mode': PRESET_SELECT_FROM_ALL, # 0 = All, 1 = From List
+    },
+    {
+        'name': 'Uhbik-G_FXPERM',
+     #   'short_name': '',
+        'separation_count': -1,
+        'presets': [],
+        'presets_exclusion': [],
+        'preset_selection_mode': PRESET_SELECT_FROM_ALL, # 0 = All, 1 = From List
+    },
+    {
+        'name': 'Uhbik-P_FXPERM',
+     #   'short_name': '',
+        'separation_count': -1,
+        'presets': [],
+        'presets_exclusion': [],
+        'preset_selection_mode': PRESET_SELECT_FROM_ALL, # 0 = All, 1 = From List
+    },
+    {
+        'name': 'Uhbik-Q_FXPERM',
+     #   'short_name': '',
+        'separation_count': -1,
+        'presets': [],
+        'presets_exclusion': [],
+        'preset_selection_mode': PRESET_SELECT_FROM_ALL, # 0 = All, 1 = From List
+    },
+    {
+        'name': 'Uhbik-S_FXPERM',
+     #   'short_name': '',
+        'separation_count': -1,
+        'presets': [],
+        'presets_exclusion': [],
+        'preset_selection_mode': PRESET_SELECT_FROM_ALL, # 0 = All, 1 = From List
+    },
+    {
+        'name': 'Uhbik-T_FXPERM',
+     #   'short_name': '',
+        'separation_count': -1,
+        'presets': [],
+        'presets_exclusion': [],
+        'preset_selection_mode': PRESET_SELECT_FROM_ALL, # 0 = All, 1 = From List
+    },
+    {
+        'name': 'Guitar Rig 5',
+     #   'short_name': '',
+        'separation_count': -1,
+        'presets': [],
+        'presets_exclusion': [],
+        'preset_selection_mode': PRESET_SELECT_FROM_ALL, # 0 = All, 1 = From List
+    },
+    {
+        'name': 'Morphoder Stereo',
+     #   'short_name': '',
+        'separation_count': -1,
+        'presets': [],
+        'presets_exclusion': [],
+        'preset_selection_mode': PRESET_SELECT_FROM_ALL, # 0 = All, 1 = From List
+    },
+    {
+        'name': 'C4 Stereo',
+     #   'short_name': '',
+        'separation_count': -1,
+        'presets': [],
+        'presets_exclusion': [],
+        'preset_selection_mode': PRESET_SELECT_FROM_ALL, # 0 = All, 1 = From List
+    },
+    {
+        'name': 'H-Delay Stereo',
+     #   'short_name': '',
+        'separation_count': -1,
+        'presets': [],
+        'presets_exclusion': [],
+        'preset_selection_mode': PRESET_SELECT_FROM_ALL, # 0 = All, 1 = From List
+    },
+    {
+        'name': 'PSP 608 MultiDelay',
+     #   'short_name': '',
+        'separation_count': -1,
+        'presets': [],
+        'presets_exclusion': [],
+        'preset_selection_mode': PRESET_SELECT_FROM_ALL, # 0 = All, 1 = From List
+    },
+    {
+        'name': 'Reaktor 6_FXPERM',
+     #   'short_name': '',
+        'separation_count': -1,
+        'presets': [],
+        'presets_exclusion': [],
+        'preset_selection_mode': PRESET_SELECT_FROM_ALL, # 0 = All, 1 = From List
+    },
+    {
+        'name': 'Krush',
+     #   'short_name': '',
+        'separation_count': -1,
+        'presets': [],
+        'presets_exclusion': [],
+        'preset_selection_mode': PRESET_SELECT_FROM_ALL, # 0 = All, 1 = From List
+    },
+    {
+        'name': 'Spaceship Delay',
+     #   'short_name': '',
+        'separation_count': -1,
+        'presets': [],
+        'presets_exclusion': [],
+        'preset_selection_mode': PRESET_SELECT_FROM_ALL, # 0 = All, 1 = From List
+    },
+    {
+        'name': 'Regressif',
+     #   'short_name': '',
+        'separation_count': -1,
+        'presets': [],
+        'presets_exclusion': [],
+        'preset_selection_mode': PRESET_SELECT_FROM_ALL, # 0 = All, 1 = From List
+    },
+    {
+        'name': 'Camel Phat 3',
+     #   'short_name': '',
+        'separation_count': -1,
+        'presets': [],
+        'presets_exclusion': [],
+        'preset_selection_mode': PRESET_SELECT_FROM_ALL, # 0 = All, 1 = From List
+    },
+    {
+        'name': 'CamelSpace',
+     #   'short_name': '',
+        'separation_count': -1,
+        'presets': [],
+        'presets_exclusion': [],
+        'preset_selection_mode': PRESET_SELECT_FROM_ALL, # 0 = All, 1 = From List
+    },
+
+
+
+
+
+
 
 ]
 
