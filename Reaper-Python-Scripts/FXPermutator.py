@@ -13,6 +13,9 @@ REGION_TAIL_BUFFER    = 20 # seconds
 PRESET_SELECT_FROM_ALL = 0
 PRESET_SELECT_FROM_LIST = 1
 
+BASE_NAME = 'FXPerm'
+NEW_TRACK_COUNT = 0
+
 LIST_OF_FX = [
     {
         'name': 'Absynth 5 FX',
@@ -44,7 +47,7 @@ LIST_OF_FX = [
         'presets_exclusion': [],
         'preset_selection_mode': PRESET_SELECT_FROM_ALL, # 0 = All, 1 = From List
     },
-   {
+    {
         'name': 'Driver',
      #   'short_name': '',
         'separation_count': -1,
@@ -351,8 +354,9 @@ def main():
         copy_and_paste_media_items(start_track, new_track)
         create_separation_between_media_items(new_track)
         # set_color_for_media_items(new_track)
-        region_name = "FXPerm-"
-        region_name += add_multiple_fx_to_track(new_track, plugin_count)
+
+        list_of_added_fx = add_multiple_fx_to_track(new_track, plugin_count)
+        region_name = '{}_{}'.format(BASE_NAME, list_of_added_fx)
         create_region_around_media_items_on_track(new_track, region_name)
         RPR_Undo_EndBlock('Create {}'.format(region_name), 0)
 
@@ -388,6 +392,17 @@ def create_new_track():
     RPR_Main_OnCommand(40702, 0) # Insert the new track at the end of the track list
     new_track_index = RPR_GetNumTracks() - 1
     new_track = RPR_GetTrack(DEFAULT_PROJECT, new_track_index)
+
+    # Name the track with our prefix
+    global NEW_TRACK_COUNT
+    NEW_TRACK_COUNT += 1
+    track_name = '{}_{}'.format(BASE_NAME, NEW_TRACK_COUNT)
+    log('New track name: {}'.format(track_name))
+    response = RPR_GetSetMediaTrackInfo_String(new_track, 'P_NAME', track_name, True)
+    (succeeded, track, param_name, track_name, set_new_value) = response
+    if not succeeded:
+        log('Failed to update the track name to the new name: {}'.format(response))
+
     return new_track
 
 def toggle_track_fx_enabled(track):
