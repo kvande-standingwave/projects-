@@ -16,6 +16,8 @@ PRESET_SELECT_FROM_LIST = 1
 BASE_NAME = 'FXPerm'
 NEW_TRACK_COUNT = 0
 
+PERMUTATOR_COLOR = 33521664
+
 LIST_OF_FX = [
     {
         'name': 'Absynth 5 FX',
@@ -527,7 +529,7 @@ def create_region_around_media_items_on_track(track, name):
     set_time_selection_to_items()
     (start_time, end_time) = get_start_and_end_of_selected()
     end_time += REGION_TAIL_BUFFER
-    RPR_AddProjectMarker(DEFAULT_PROJECT, True, start_time, end_time, name, -1)
+    RPR_AddProjectMarker2(DEFAULT_PROJECT, True, start_time, end_time, name, -1, PERMUTATOR_COLOR) # Always Red
 
 def get_start_and_end_of_selected():
     lowest_start = 0
