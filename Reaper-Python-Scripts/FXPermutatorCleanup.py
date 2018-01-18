@@ -1,3 +1,5 @@
+from Functions import *
+
 BASE_NAME = 'FXPerm'
 BUFFER_SIZE = 255
 
@@ -60,9 +62,6 @@ def main():
 
 
     log('Success!')
-
-def log(string):
-    RPR_ShowConsoleMsg('{}{}'.format(string,'\n'))
 
 if __name__ == "__main__":
     main()
