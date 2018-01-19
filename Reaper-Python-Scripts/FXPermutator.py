@@ -1,5 +1,7 @@
 import random
 
+from Functions import *
+
 # Constants for pop-up dialogs
 TITLE = 'FX Permutator'
 DEFAULT_INPUT_SIZE = 255
@@ -322,13 +324,6 @@ LIST_OF_FX = [
         'presets_exclusion': [],
         'preset_selection_mode': PRESET_SELECT_FROM_ALL, # 0 = All, 1 = From List
     },
-
-
-
-
-
-
-
 ]
 
 def main():
@@ -572,9 +567,6 @@ def go_to_end_of_time_selection():
 
 def move_cursor(seconds_to_move):
     RPR_MoveEditCursor(seconds_to_move, False)
-
-def log(string):
-    RPR_ShowConsoleMsg('{}{}'.format(string,'\n'))
 
 
 # def set_colors():
